@@ -1,0 +1,7 @@
+Running: xsim.dir/mixed_precision_core_behav/xsimk.exe -simmode gui -wdb mixed_precision_core_behav.wdb -simrunnum 0 -socket 52901
+Design successfully loaded
+Design Loading Memory Usage: 10592 KB (Peak: 10592 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 11524 KB (Peak: 11524 KB)
+Simulation CPU Usage: 93 ms

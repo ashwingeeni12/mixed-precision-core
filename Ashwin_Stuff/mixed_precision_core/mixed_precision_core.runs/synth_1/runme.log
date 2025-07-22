@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log mixed_precision_core.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mixed_precision_core.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Jul 22 02:23:03 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mixed_precision_core.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 491.793 ; gain = 213.160
+Command: read_checkpoint -auto_incremental -incremental {D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/utils_1/imports/synth_1/mixed_precision_core.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/utils_1/imports/synth_1/mixed_precision_core.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mixed_precision_core -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28068
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.293 ; gain = 500.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mixed_precision_core' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'if_stage' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:133]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter IMEM_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'if_stage' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:133]
+INFO: [Synth 8-6157] synthesizing module 'id_stage' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:157]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter REG_ADDR_W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'id_stage' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:157]
+INFO: [Synth 8-6157] synthesizing module 'ex_stage' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:184]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter REG_ADDR_W bound to: 5 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:212]
+INFO: [Synth 8-6155] done synthesizing module 'ex_stage' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:184]
+INFO: [Synth 8-6157] synthesizing module 'mem_stage' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:240]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter DMEM_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem_stage' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:240]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'wb_stage' [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:260]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter REG_ADDR_W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'wb_stage' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:260]
+INFO: [Synth 8-6155] done synthesizing module 'mixed_precision_core' (0#1) [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:46]
+WARNING: [Synth 8-7129] Port clk in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[31] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[30] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[29] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[28] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[27] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[26] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[25] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[24] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[23] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[22] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[21] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[20] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[19] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[18] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[17] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[16] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[15] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[14] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[13] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[12] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[11] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[10] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[9] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[8] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[7] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[6] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[5] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[4] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[3] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[2] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[1] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmem_rdata[0] in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][20] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][19] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][18] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][17] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][16] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][15] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][14] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][13] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][12] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][11] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][10] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][9] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][8] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][7] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][6] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][5] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][4] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][3] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][2] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][1] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[instr][0] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][31] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][30] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][29] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][28] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][27] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][26] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][25] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][24] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][23] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][22] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][21] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][20] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][19] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][18] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][17] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][16] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][15] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][14] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][13] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][12] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][11] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][10] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][9] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][8] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][7] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][6] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][5] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][4] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][3] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][2] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][1] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[pc][0] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][31] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][30] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][29] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][28] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][27] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][26] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][25] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][24] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][23] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][22] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_ex_q[rs2_data][21] in module ex_stage is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1108.066 ; gain = 606.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1108.066 ; gain = 606.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1108.066 ; gain = 606.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1108.066 ; gain = 606.352
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_we driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[18] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[17] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[16] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[15] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[14] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[13] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[12] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[11] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[10] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[9] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[8] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[7] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[6] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[5] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[4] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[3] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[2] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[1] driven by constant 0
+WARNING: [Synth 8-3917] design mixed_precision_core has port dmem_wdata[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:57 . Memory (MB): peak = 1301.875 ; gain = 800.160
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:57 . Memory (MB): peak = 1301.875 ; gain = 800.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:57 . Memory (MB): peak = 1301.875 ; gain = 800.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance u_wb of module wb_stage having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mixed_precision_core | mem_wb_q_reg[rd][4] | 4      | 5     | YES          | NO                 | YES               | 5      | 0       | 
++---------------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    19|
+|3     |LUT1   |     1|
+|4     |LUT2   |    12|
+|5     |LUT4   |    26|
+|6     |LUT6   |     8|
+|7     |SRL16E |     5|
+|8     |FDCE   |    96|
+|9     |FDRE   |     5|
+|10    |IBUF   |    13|
+|11    |OBUF   |    53|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+---------+------+
+|      |Instance |Module   |Cells |
++------+---------+---------+------+
+|1     |top      |         |   239|
+|2     |  u_ex   |ex_stage |    57|
+|3     |  u_if   |if_stage |    14|
++------+---------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 224 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 1517.945 ; gain = 1016.230
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1533.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1623.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 19fecbc2
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:01:09 . Memory (MB): peak = 1623.535 ; gain = 1127.199
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1623.535 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.runs/synth_1/mixed_precision_core.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mixed_precision_core_utilization_synth.rpt -pb mixed_precision_core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 02:24:43 2025...

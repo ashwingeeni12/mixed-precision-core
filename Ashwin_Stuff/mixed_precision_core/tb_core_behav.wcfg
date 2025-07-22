@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_core_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_mixed_precision_pipeline_top_sv_1460850331 " />
+            <top_module name="glbl" />
+            <top_module name="mp_isa_pkg" />
+            <top_module name="tb_core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="33.625 ns"></ZoomStartTime>
+      <ZoomEndTime time="71.276 ns"></ZoomEndTime>
+      <Cursor1Time time="65.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/tb_core/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/imem_addr" type="array">
+      <obj_property name="ElementShortName">imem_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/if_id_q.instr" type="array">
+      <obj_property name="ElementShortName">.instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/id_ex_q.instr" type="array">
+      <obj_property name="ElementShortName">.instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/ex_mem_q.alu_result" type="array">
+      <obj_property name="ElementShortName">.alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/mem_wb_q.wb_data" type="array">
+      <obj_property name="ElementShortName">.wb_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.wb_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/rf_we" type="logic">
+      <obj_property name="ElementShortName">rf_we</obj_property>
+      <obj_property name="ObjectShortName">rf_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/DUT/u_rf/mem[1]" type="array">
+      <obj_property name="ElementShortName">[1][0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][0:3][7:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sim_1/imports/Downloads/tb_core.sv,1753171447,systemVerilog,,,,tb_core,,uvm,../../../../../../ashwin_shit/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv,1753170563,systemVerilog,D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sim_1/imports/Downloads/tb_core.sv,D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sim_1/imports/Downloads/tb_core.sv,,$unit_mixed_precision_pipeline_top_sv_1460850331;ex_stage;id_stage;mem_stage;mixed_precision_core;mp_isa_pkg;reg_file;wb_stage,,uvm,../../../../../../ashwin_shit/2025.1/Vivado/data/rsb/busdef,,,,,

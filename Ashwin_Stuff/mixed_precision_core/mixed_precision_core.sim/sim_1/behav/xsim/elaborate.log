@@ -1,0 +1,24 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/ashwin_shit/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_core_behav xil_defaultlib.tb_core xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'id_ex_d' might have multiple concurrent drivers [D:/Ashwin Stuff/mixed_precision_core/mixed_precision_core.srcs/sources_1/imports/Downloads/mixed_precision_pipeline_top.sv:157]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_mixed_precision_pipeline_t...
+Compiling package xil_defaultlib.mp_isa_pkg
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.ex_stage
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.mixed_precision_core
+Compiling module xil_defaultlib.tb_core
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_core_behav
