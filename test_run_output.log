@@ -1,0 +1,43 @@
+================================================================================
+Running xsim simulation
+PREC_SEL=0 M=8 K=8 N=8
+================================================================================
+
+[1/3] Compiling design files...
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/dp_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dp_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/int8_mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module int8_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv" into library xil_defaultlib
+WARNING: [VRFC 10-8896] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:4]
+INFO: [VRFC 10-311] analyzing module pe_cell
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv" into library xil_defaultlib
+WARNING: [VRFC 10-8896] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:4]
+INFO: [VRFC 10-311] analyzing module systolic_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv" into library xil_defaultlib
+WARNING: [VRFC 10-8896] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:4]
+INFO: [VRFC 10-311] analyzing module gemm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv" into library xil_defaultlib
+WARNING: [VRFC 10-8896] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:4]
+INFO: [VRFC 10-311] analyzing module top_gemm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of package 'mp_types' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:4]
+WARNING: [VRFC 10-3669] re-analyze package '$unit_pe_cell_sv' since package 'mp_types' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv:1]
+WARNING: [VRFC 10-3669] re-analyze module 'pe_cell' since module '$unit_pe_cell_sv' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv:4]
+WARNING: [VRFC 10-3669] re-analyze package '$unit_systolic_array_sv' since package 'mp_types' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv:1]
+WARNING: [VRFC 10-3669] re-analyze module 'systolic_array' since module '$unit_systolic_array_sv' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv:4]
+WARNING: [VRFC 10-3669] re-analyze package '$unit_gemm_controller_sv' since package 'mp_types' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv:1]
+WARNING: [VRFC 10-3669] re-analyze module 'gemm_controller' since module '$unit_gemm_controller_sv' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv:4]
+WARNING: [VRFC 10-3669] re-analyze package '$unit_top_gemm_sv' since package 'mp_types' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv:1]
+WARNING: [VRFC 10-3669] re-analyze module 'top_gemm' since module '$unit_top_gemm_sv' is overwritten or removed [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv:4]
+INFO: [VRFC 10-311] analyzing module tb_top_gemm
+WARNING: [VRFC 10-3824] variable 'idx' must explicitly be declared as automatic or static [D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv:64]

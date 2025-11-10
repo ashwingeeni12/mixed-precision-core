@@ -1,0 +1,1 @@
+-debug "typical" -relax --snapshot "tb_top_gemm_snap" "xil_defaultlib.tb_top_gemm" 

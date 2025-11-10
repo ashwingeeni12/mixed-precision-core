@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  8 16:59:06 2025
+# Process ID         : 28284
+# Current directory  : D:/Ashwin_Stuff/mp-matmul/mp-matmul
+# Command line       : vivado.exe -mode batch -source scripts/run_sim.tcl
+# Log file           : D:/Ashwin_Stuff/mp-matmul/mp-matmul/vivado.log
+# Journal file       : D:/Ashwin_Stuff/mp-matmul/mp-matmul\vivado.jou
+# Running On         : MSI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16867 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 34047 MB
+# Available Virtual  : 11520 MB
+#-----------------------------------------------------------
+source scripts/run_sim.tcl
+# if {![info exists ::env(PREC_SEL)]} { set ::env(PREC_SEL) 0 }
+# if {![info exists ::env(M)]} { set ::env(M) 4 }
+# if {![info exists ::env(K)]} { set ::env(K) 4 }
+# if {![info exists ::env(N)]} { set ::env(N) 4 }
+# if {[file exists ./mp_sim]} {
+#     file delete -force ./mp_sim
+# }
+# create_project mp_sim ./mp_sim -part xc7a200tsbg484-1
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 493.762 ; gain = 214.180
+# set_property target_language Verilog [current_project]
+# add_files -fileset sources_1 src/mp_types.sv src/dp_bram.sv src/int8_mac.sv src/fp16_mul.sv src/fp16_add.sv src/fp32_mul.sv src/fp32_add.sv src/pe_cell.sv src/systolic_array.sv src/gemm_controller.sv src/top_gemm.sv
+# add_files -fileset sim_1 tb/tb_top_gemm.sv
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# set defs [format "PREC_SEL=%s M=%s K=%s N=%s" $::env(PREC_SEL) $::env(M) $::env(K) $::env(N)]
+# set_property verilog_define $defs [get_filesets sources_1]
+# set_property verilog_define $defs [get_filesets sim_1]
+# set_property top tb_top_gemm [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top_gemm'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Ashwin_Stuff/mp-matmul/mp-matmul/mp_sim/mp_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/ashwin_shit/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_gemm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Ashwin_Stuff/mp-matmul/mp-matmul/mp_sim/mp_sim.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: The system cannot find the file specified.
+
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'D:/Ashwin_Stuff/mp-matmul/mp-matmul/mp_sim/mp_sim.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+    while executing
+"launch_simulation"
+    (file "scripts/run_sim.tcl" line 31)
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 16:59:19 2025...

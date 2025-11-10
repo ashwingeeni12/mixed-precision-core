@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  8 17:09:56 2025
+# Process ID         : 22820
+# Current directory  : D:/Ashwin_Stuff/mp-matmul/mp-matmul
+# Command line       : xsim.exe -log xsim.log -mode tcl -source {xsim.dir/tb_top_gemm_snap/xsim_script.tcl}
+# Log file           : D:/Ashwin_Stuff/mp-matmul/mp-matmul/xsim.log
+# Journal file       : D:/Ashwin_Stuff/mp-matmul/mp-matmul\xsim.jou
+# Running On         : MSI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16867 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 34047 MB
+# Available Virtual  : 12148 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_top_gemm_snap/xsim_script.tcl
+# xsim {tb_top_gemm_snap} -autoloadwcfg -tclbatch {scripts/run_xsim.tcl}
+Time resolution is 1 ps
+source scripts/run_xsim.tcl
+## log_wave -recursive *
+## run all
+TB start
+Attempting to open output file...
+File opened successfully, writing 4 x 4 matrix...
+Dump complete -> mem/C_out.mem
+$finish called at time : 2505 ns : File "D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv" Line 74
+## exit
+INFO: [Common 17-206] Exiting xsim at Sat Nov  8 17:09:58 2025...

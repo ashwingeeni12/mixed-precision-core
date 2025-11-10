@@ -1,0 +1,21 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/dp_bram.sv,1759586637,systemVerilog,,,,dp_bram,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_add.sv,1759588989,systemVerilog,,,,fp16_add,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_add_ip.sv,1762664199,systemVerilog,,,,fp16_add_ip,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_mul.sv,1759586637,systemVerilog,,,,fp16_mul,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_mul_ip.sv,1762664194,systemVerilog,,,,fp16_mul_ip,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_add.sv,1759588992,systemVerilog,,,,fp32_add,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_add_ip.sv,1762663863,systemVerilog,,,,fp32_add_ip,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_mul.sv,1759586637,systemVerilog,,,,fp32_mul,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_mul_ip.sv,1762663862,systemVerilog,,,,fp32_mul_ip,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv,1762653575,systemVerilog,,,,$unit_gemm_controller_sv;gemm_controller,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/int8_mac.sv,1759586637,systemVerilog,,,,int8_mac,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv,1762641643,systemVerilog,D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv;D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv;D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv;D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv;D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv,,D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/sim_defines.vh,mp_types,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv,1762653578,systemVerilog,,,,$unit_pe_cell_sv;pe_cell,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/sim_defines.vh,1762714121,verilog,,,,,,,,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv,1762653580,systemVerilog,,,,$unit_systolic_array_sv;systolic_array,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv,1762653572,systemVerilog,,,,$unit_top_gemm_sv;top_gemm,,,src,,,,,
+D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv,1762654619,systemVerilog,,,D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/sim_defines.vh,$unit_tb_top_gemm_sv;tb_top_gemm,,,src,,,,,

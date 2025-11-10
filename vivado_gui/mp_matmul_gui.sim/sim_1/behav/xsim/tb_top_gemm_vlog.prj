@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../../../ashwin_shit/2025.1/Vivado/data/rsb/busdef" -d "PREC_SEL=0" -d "M=4" -d "K=4" -d "N=4" \
+"../../../../../src/dp_bram.sv" \
+"../../../../../src/fp16_add.sv" \
+"../../../../../src/fp16_mul.sv" \
+"../../../../../src/fp32_add.sv" \
+"../../../../../src/fp32_mul.sv" \
+"../../../../../src/mp_types.sv" \
+"../../../../../src/top_gemm.sv" \
+"../../../../../src/systolic_array.sv" \
+"../../../../../src/pe_cell.sv" \
+"../../../../../src/gemm_controller.sv" \
+"../../../../../src/int8_mac.sv" \
+"../../../../../tb/tb_top_gemm.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

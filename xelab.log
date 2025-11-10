@@ -1,0 +1,30 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/ashwin_shit/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical -relax --snapshot tb_top_gemm_snap xil_defaultlib.tb_top_gemm 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'M' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv:35]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'addr_A' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv:44]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'addr_B' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv:45]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'addr_C' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv:46]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv" Line 7. Module tb_top_gemm has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv" Line 7. Module tb_top_gemm has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mp_types
+Compiling module xil_defaultlib.dp_bram(DEPTH=65536,INIT_FILE="m...
+Compiling module xil_defaultlib.dp_bram(DEPTH=65536,INIT_FILE="m...
+Compiling module xil_defaultlib.dp_bram(DEPTH=65536,DBG_READ_POR...
+Compiling module xil_defaultlib.fp32_mul_ip
+Compiling module xil_defaultlib.fp32_mul
+Compiling module xil_defaultlib.fp32_add_ip
+Compiling module xil_defaultlib.fp32_add
+Compiling module xil_defaultlib.pe_cell(PREC=PREC_FP32_mp_types)
+Compiling module xil_defaultlib.gemm_controller(PREC=PREC_FP32_m...
+Compiling module xil_defaultlib.top_gemm(PREC=PREC_FP32_mp_types...
+Compiling module xil_defaultlib.tb_top_gemm
+Built simulation snapshot tb_top_gemm_snap

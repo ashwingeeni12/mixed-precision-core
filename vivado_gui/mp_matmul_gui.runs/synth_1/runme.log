@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log systolic_array.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source systolic_array.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Oct  4 10:02:34 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source systolic_array.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 491.945 ; gain = 212.109
+Command: synth_design -top systolic_array -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36836
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 996.148 ; gain = 500.242
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-10644] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:30]
+INFO: [Synth 8-9937] previous definition of design element 'mp_types' is here [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:30]
+CRITICAL WARNING: [Synth 8-10644] design element 'mp_types' is previously defined; ignoring this definition [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:30]
+INFO: [Synth 8-9937] previous definition of design element 'mp_types' is here [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'pe_cell' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv:4]
+	Parameter PREC bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'int8_mac' [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/int8_mac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'int8_mac' (0#1) [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/int8_mac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'pe_cell' (0#1) [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array' (0#1) [D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv:4]
+WARNING: [Synth 8-7129] Port a_in[31] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[30] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[29] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[28] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[27] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[26] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[25] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[24] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[23] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[22] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[21] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[20] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[19] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[18] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[17] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[16] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[15] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[14] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[13] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[12] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[11] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[10] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[9] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_in[8] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[31] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[30] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[29] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[28] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[27] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[26] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[25] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[24] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[23] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[22] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[21] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[20] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[19] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[18] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[17] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[16] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[15] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[14] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[13] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[12] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[11] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[10] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[9] in module pe_cell is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in[8] in module pe_cell is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1102.391 ; gain = 606.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.391 ; gain = 606.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.391 ; gain = 606.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.391 ; gain = 606.484
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 16    
++---Registers : 
+	               32 Bit    Registers := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port a_row[127] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[126] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[125] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[124] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[123] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[122] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[121] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[120] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[119] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[118] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[117] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[116] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[115] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[114] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[113] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[112] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[111] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[110] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[109] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[108] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[107] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[106] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[105] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[104] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[95] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[94] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[93] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[92] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[91] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[90] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[89] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[88] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[87] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[86] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[85] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[84] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[83] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[82] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[81] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[80] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[79] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[78] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[77] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[76] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[75] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[74] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[73] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[72] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[63] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[62] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[61] in module systolic_array is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_row[60] in module systolic_array is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1335.980 ; gain = 840.074
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1351.828 ; gain = 855.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1351.828 ; gain = 855.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   320|
+|3     |LUT1   |     1|
+|4     |LUT2   |   608|
+|5     |LUT3   |   112|
+|6     |LUT4   |   400|
+|7     |LUT5   |    96|
+|8     |LUT6   |   416|
+|9     |FDRE   |   512|
+|10    |IBUF   |   579|
+|11    |OBUF   |   512|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------+------+
+|      |Instance               |Module      |Cells |
++------+-----------------------+------------+------+
+|1     |top                    |            |  3557|
+|2     |  \row[0].col[0].u_pe  |pe_cell     |   154|
+|3     |    \g_int8.u_mac      |int8_mac_29 |   154|
+|4     |  \row[0].col[1].u_pe  |pe_cell_0   |   154|
+|5     |    \g_int8.u_mac      |int8_mac_28 |   154|
+|6     |  \row[0].col[2].u_pe  |pe_cell_1   |   154|
+|7     |    \g_int8.u_mac      |int8_mac_27 |   154|
+|8     |  \row[0].col[3].u_pe  |pe_cell_2   |   154|
+|9     |    \g_int8.u_mac      |int8_mac_26 |   154|
+|10    |  \row[1].col[0].u_pe  |pe_cell_3   |   154|
+|11    |    \g_int8.u_mac      |int8_mac_25 |   154|
+|12    |  \row[1].col[1].u_pe  |pe_cell_4   |   154|
+|13    |    \g_int8.u_mac      |int8_mac_24 |   154|
+|14    |  \row[1].col[2].u_pe  |pe_cell_5   |   154|
+|15    |    \g_int8.u_mac      |int8_mac_23 |   154|
+|16    |  \row[1].col[3].u_pe  |pe_cell_6   |   154|
+|17    |    \g_int8.u_mac      |int8_mac_22 |   154|
+|18    |  \row[2].col[0].u_pe  |pe_cell_7   |   154|
+|19    |    \g_int8.u_mac      |int8_mac_21 |   154|
+|20    |  \row[2].col[1].u_pe  |pe_cell_8   |   154|
+|21    |    \g_int8.u_mac      |int8_mac_20 |   154|
+|22    |  \row[2].col[2].u_pe  |pe_cell_9   |   154|
+|23    |    \g_int8.u_mac      |int8_mac_19 |   154|
+|24    |  \row[2].col[3].u_pe  |pe_cell_10  |   154|
+|25    |    \g_int8.u_mac      |int8_mac_18 |   154|
+|26    |  \row[3].col[0].u_pe  |pe_cell_11  |   154|
+|27    |    \g_int8.u_mac      |int8_mac_17 |   154|
+|28    |  \row[3].col[1].u_pe  |pe_cell_12  |   154|
+|29    |    \g_int8.u_mac      |int8_mac_16 |   154|
+|30    |  \row[3].col[2].u_pe  |pe_cell_13  |   154|
+|31    |    \g_int8.u_mac      |int8_mac_15 |   154|
+|32    |  \row[3].col[3].u_pe  |pe_cell_14  |   155|
+|33    |    \g_int8.u_mac      |int8_mac    |   155|
++------+-----------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 241 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1563.902 ; gain = 1067.996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1578.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1682.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f3dbb1de
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 101 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 1682.727 ; gain = 1190.781
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1682.727 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Ashwin_Stuff/mp-matmul/mp-matmul/vivado_gui/mp_matmul_gui.runs/synth_1/systolic_array.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file systolic_array_utilization_synth.rpt -pb systolic_array_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  4 10:03:32 2025...

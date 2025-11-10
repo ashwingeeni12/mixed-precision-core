@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(tee:*)",
+      "Bash(cmd //c \"scripts\\run_vivado.bat -version\")",
+      "Bash(cat:*)",
+      "Bash(vivado -version:*)",
+      "Bash(cmd //c \"vivado -version\")",
+      "Bash(cmd //c \"echo %PATH%\")",
+      "Bash(grep:*)",
+      "Bash(cmd //c \"run_single_test.bat\")",
+      "Bash(cmd //c run_single_test.bat)",
+      "Bash(dir:*)",
+      "Bash(./test_xsim_steps.bat)",
+      "Bash(./scripts/run_xsim.bat)",
+      "Bash(test_run_output.log)",
+      "Bash(done)",
+      "Bash(ls:*)",
+      "Bash(export PREC_SEL=1)",
+      "Bash(export M=8)",
+      "Bash(export K=8)",
+      "Bash(export N=8)",
+      "Bash(./scripts/run_xsim_simple.bat)",
+      "Bash(QUICK_TEST=true MAX_CASES=1 python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

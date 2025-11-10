@@ -1,0 +1,12 @@
+sv xil_defaultlib src\mp_types.sv 
+sv xil_defaultlib src\dp_bram.sv 
+sv xil_defaultlib src\int8_mac.sv 
+sv xil_defaultlib src\fp16_mul.sv 
+sv xil_defaultlib src\fp16_add.sv 
+sv xil_defaultlib src\fp32_mul.sv 
+sv xil_defaultlib src\fp32_add.sv 
+sv xil_defaultlib src\pe_cell.sv 
+sv xil_defaultlib src\systolic_array.sv 
+sv xil_defaultlib src\gemm_controller.sv 
+sv xil_defaultlib src\top_gemm.sv 
+sv xil_defaultlib tb\tb_top_gemm.sv 

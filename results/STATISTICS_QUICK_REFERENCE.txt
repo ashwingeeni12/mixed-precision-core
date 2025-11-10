@@ -1,0 +1,71 @@
+===============================================================================
+STATISTICS QUICK REFERENCE - Test Results CSV
+===============================================================================
+
+MOST IMPORTANT METRICS (Start Here):
+------------------------------------
+norm_rel_error    - Overall accuracy (0 = perfect, <0.01 = excellent)
+snr_db            - Signal quality (>40 dB = excellent, >20 dB = good)
+correlation       - Pattern match (1.0 = perfect, >0.99 = excellent)
+max_abs_error     - Worst single error (absolute value)
+
+ACCURACY METRICS:
+-----------------
+mae               - Average error magnitude
+rmse              - RMS error (penalizes outliers more than MAE)
+rel_mae           - Average error as % (0.01 = 1% error)
+norm_rel_error    - Matrix-level error (standard in linear algebra)
+
+WORST-CASE METRICS:
+-------------------
+max_abs_error     - Absolute worst error
+max_rel_error     - Relative worst error  
+p99_error         - 99% of errors smaller than this
+p95_error         - 95% of errors smaller than this
+
+ERROR DISTRIBUTION:
+-------------------
+p50_error         - Median error (typical case)
+p90_error         - 90th percentile
+mean_bias         - Systematic offset (+/- shows direction)
+
+PERCENTAGE WITHIN TOLERANCE:
+----------------------------
+acc_1pct          - % of values within 1% of correct
+acc_5pct          - % of values within 5% of correct
+acc_10pct         - % of values within 10% of correct
+
+PROBLEM CHARACTERIZATION:
+-------------------------
+actual_cond_A/B   - Matrix conditioning (1=perfect, >100=ill-conditioned)
+category          - low/medium/high condition number
+norm_C_ref        - Size of correct answer (for scaling)
+
+GOOD RESULTS LOOK LIKE:
+-----------------------
+norm_rel_error < 0.01    (< 1% matrix error)
+snr_db > 40              (excellent signal quality)
+correlation > 0.99       (near-perfect correlation)
+acc_5pct > 95            (most values within 5%)
+mean_bias ≈ 0            (no systematic offset)
+
+WARNING SIGNS:
+--------------
+norm_rel_error > 0.1     (>10% error - check precision/conditioning)
+snr_db < 20              (poor quality)
+correlation < 0.95       (pattern loss)
+acc_10pct < 80           (many values off by >10%)
+mean_bias >> 0           (systematic errors)
+
+FORMULAS:
+---------
+MAE = mean(|C_out - C_ref|)
+RMSE = sqrt(mean((C_out - C_ref)²))
+rel_MAE = MAE / mean(|C_ref|)
+norm_rel_error = ||C_out - C_ref|| / ||C_ref||
+SNR_dB = 10×log₁₀(signal_power / noise_power)
+correlation = cov(C_out,C_ref) / (std(C_out)×std(C_ref))
+
+===============================================================================
+For detailed explanations, see STATISTICS_EXPLAINED.md
+===============================================================================

@@ -1,0 +1,31 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/mp_types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_mul_ip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_mul_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_add_ip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_add_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_mul_ip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_mul_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_add_ip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_add_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/dp_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dp_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/int8_mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module int8_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp16_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/fp32_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp32_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/pe_cell.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_cell
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/systolic_array.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/gemm_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gemm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/src/top_gemm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_gemm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Ashwin_Stuff/mp-matmul/mp-matmul/tb/tb_top_gemm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_gemm
